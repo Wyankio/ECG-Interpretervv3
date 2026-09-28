@@ -1,0 +1,8 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ECG Interpreter Lab</title><link rel="stylesheet" href="./app/style.css"></head><body>
+<main>
+<header><div><h1>ECG Interpreter Lab</h1><div class="sub">12-lead median ECG · latihan interpretasi bertahap</div></div><div class="actions"><select id="caseSelect" aria-label="Pilih ECG"></select><button id="random">Random case</button></div></header>
+<div class="notice"><strong>Perhatikan:</strong> sample ini adalah <em>median waveform</em>, bukan rekaman ECG 10 detik penuh. Cocok untuk latihan morfologi P/QRS/ST-T, axis, BBB, dan hypertrophy; penilaian rhythm, rate, PAC/PVC, AF, VT, dan VF membutuhkan raw ECG.</div>
+<section class="casebar"><strong id="caseTitle">—</strong><span id="caseMeta">—</span></section>
+<section class="ecgwrap"><div id="ecg" class="grid"></div></section>
+<div class="work"><section class="panel"><div id="steps" class="steps"></div><div id="question" class="question"></div><section id="answer" class="answer"></section></section><aside class="panel side"><h3>Record</h3><div id="record" class="metric">—</div><div class="metric"><strong>Urutan belajar</strong><br>Irama → frekuensi → P → PR/AV → QRS → axis → Q → lebar QRS → transition/BBB → LVH/RVH → aritmia</div><div class="metric"><strong>Dataset labels</strong><br><span class="small">Disembunyikan sampai latihan selesai.</span></div></aside></div>
+</main><script type="module" src="./app/app.js"></script></body></html>
